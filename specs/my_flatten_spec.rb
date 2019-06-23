@@ -1,4 +1,6 @@
-describe "my_flatten" do
+# Write an `Array#my_flatten` method that akes a multi-dimentional array and returns a single array of all the elements
+# `[1,[2,3], [4,[5]]].my_flatten` => [1,2,3,4,5]
+describe "Array#my_flatten" do
   it "should NOT use built-in ruby #flatten method" do
     arr = [1, 2, 3, [4, [5, 6]], [[[7]], 8]]
     expect(arr).not_to receive(:flatten)
@@ -11,7 +13,13 @@ describe "my_flatten" do
   end
 end
 
-describe "my_controlled_flatten" do
+describe "Array#my_controlled_flatten" do
+  # Write an `Array#my_controlled_flatten(n)` method that only flattens n levels of an array.
+  # E.g. If you have an array with 3 levels of nested arrays, and run
+  # my_flatten(1), you should return an array with 2 levels of nested
+  # arrays
+  #
+  # `[1,[2,3], [4,[5]]].my_controlled_flatten(1)` => [1,2,3,4,[5]]
   it "should NOT use built-in ruby #flatten method" do
     arr = [1,[2,3], [4,[5]], [[6,[7]]]]
     expect(arr).not_to receive(:flatten)

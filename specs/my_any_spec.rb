@@ -1,4 +1,9 @@
-describe 'my_any' do
+# Write an `Array#my_any?(&prc)` method.
+# This method should return true if any of the Array elements satisfy the block,
+# otherwise it should return false.
+# Example: `[1,2,3].my_any? {|n| n.even?}` => true
+# `[1,3,5].my_any? {|n| n.even?}` => false
+describe 'Array#my_any' do
   arr = [1,2,3]
 
   it "should use NOT use built-in #any? method" do

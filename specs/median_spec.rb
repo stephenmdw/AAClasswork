@@ -1,4 +1,6 @@
-describe "#median" do
+# Write an `Array#median` method that returns the median element in an array
+# If the length is even, return the average of the middle two elements
+describe "Array#median" do
   let(:even_array) { [3, 2, 6, 7] }
   let(:odd_array) { [3, 2, 6, 7, 1] }
 

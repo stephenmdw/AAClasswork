@@ -1,4 +1,6 @@
-describe "my_each" do
+# Write an `Array#my_each(&prc)` method that calls a proc on each element of the array.
+# Write an `Array#my_each_with_index(&prc)` method that calls a proc on each element with its index.
+describe "Array#my_each" do
   res = []
   [1,2,3].my_each{|el| res << 2*el}
 
@@ -7,7 +9,7 @@ describe "my_each" do
   end
 end
 
-describe "my_each_with_index" do
+describe "Array#my_each_with_index" do
   res = []
   [1,2,3].my_each_with_index{|el, i| res << 2*el + i}
 

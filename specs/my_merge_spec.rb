@@ -1,4 +1,6 @@
-describe "my_merge" do
+# Write a `Hash#my_merge(other_hash)` method. This should NOT modify the original hash and 
+# return a combined version of both hashes.
+describe "Hash#my_merge" do
   let(:hash1) { {a: 1, b: 2, c: 3} }
   let(:hash2) { {d: 4, e: 5} }
   let(:hash3) { {c: 33, d: 4, e: 5} }

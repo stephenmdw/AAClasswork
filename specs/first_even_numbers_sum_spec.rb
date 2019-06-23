@@ -1,3 +1,5 @@
+# Write a recursive method that returns the sum of the first n even numbers
+# recursively. Assume n > 0.
 describe 'first_even_numbers_sum' do
   it "returns the sum of the first even number" do
     expect(first_even_numbers_sum(1)).to eq(2)
