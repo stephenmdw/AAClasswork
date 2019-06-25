@@ -1,5 +1,5 @@
 class Array
-  # Define a method, `Array#two_sum`, that finds all 
+  # Define a method, `two_sum`, that finds all 
   # pairs of positions where the elements at those positions 
   # sum to zero. The method should return a nested 
   # array of positions.

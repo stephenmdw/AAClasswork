@@ -11,7 +11,7 @@
 #  [3, 2, 1]
 # ]
 
-# does not call ruby's built-in `Array#permutation` method
+# does not call Ruby's built-in `Array#permutation` method
 
 def permutations(array)
   return [array] if array.length <= 1

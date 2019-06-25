@@ -6,9 +6,9 @@
 #                12
 #               /  \
 #              /    \
-#             3      4
-#                   / \
-#                  2   2
+#             4      3
+#            / \
+#           2   2
 
 # Define a method `prime_factorization(n)` that breaks a number 
 # down into it's prime factors.

@@ -1,7 +1,7 @@
 # **THIS PROBLEM WILL NOT SHOW UP ON A REAL ASSESSMENT** 
 # If you are a non-native English speaker and find it 
-# difficult to understand this problem do not spend too 
-# much time on it and focus on other problems instead.
+# difficult to understand this problem, do not spend too 
+# much time on it.  Focus on other problems instead.
 
 # Define a method `pig_latinify(sentence)` that translates a 
 # sentence into pig latin. You may want a helper method.

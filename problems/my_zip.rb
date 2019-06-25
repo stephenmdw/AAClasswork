@@ -1,7 +1,7 @@
 class Array
-  # Define a method `Array#my_zip(*arrays)` that merges 
-  # elements with the corresponding elements from each 
-  # provided argument.
+  # Define a method `my_zip(*arrays)` that merges 
+  # elements from the receiver with the corresponding 
+  # elements from each provided argument.
   # Does not call Ruby's built-in `Array#zip` method
 
   # example => [1,2,3].my_zip([4,5,6], [7,8,9]) 
