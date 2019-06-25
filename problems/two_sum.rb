@@ -4,7 +4,7 @@ class Array
   # sum to zero. The method should return a nested 
   # array of positions.
 
-  # Orrdering matters. We want each of the pairs to be sorted 
+  # Ordering matters. We want each of the pairs to be sorted 
   # smaller index before bigger index. We want the array of 
   # pairs to be sorted "dictionary-wise":
   #   [0, 2] before [1, 2] (smaller first elements come first)

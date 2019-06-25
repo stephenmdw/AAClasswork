@@ -7,5 +7,4 @@
 # example_2: string_include_key("cba", "abc") => false
 
 def string_include_key?(string, key)
-
 end

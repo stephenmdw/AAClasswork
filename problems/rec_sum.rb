@@ -2,5 +2,4 @@
 # sum of all elements in an array recursively
 
 def rec_sum(nums)
-  
 end

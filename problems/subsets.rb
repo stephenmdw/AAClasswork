@@ -2,7 +2,7 @@
 # returns all of the subsets of an array
 
 # example => subsets([1,2,3])
-# should return => []
+# should return => [
 #  [], 
 #  [1], 
 #  [2], 

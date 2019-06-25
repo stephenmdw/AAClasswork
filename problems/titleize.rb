@@ -4,5 +4,4 @@
 # Do not capitalize words like 'a', 'and', 'of', 'over' or 'the'
 
 def titleize(title)
-  
 end
