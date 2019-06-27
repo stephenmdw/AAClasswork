@@ -5,17 +5,17 @@ describe "Hash#my_merge" do
   let(:hash2) { {d: 4, e: 5} }
   let(:hash3) { {c: 33, d: 4, e: 5} }
 
-  it 'should NOT use built-in ruby #merge method' do
+  before(:each) do
     expect(hash1).not_to receive(:merge)
     expect(hash1).not_to receive(:merge!)
     hash1.my_merge(hash2)
   end
 
   it "Merges 2 hashes and returns a hash" do
-      expect(hash1.my_merge(hash2)).to eq(hash1.merge(hash2))
+      expect(hash1.my_merge(hash2)).to eq({ a: 1, b: 2, c: 3, d: 4, e: 5})
   end
 
   it "Prioritizes values from the hash being merged in" do
-      expect(hash1.my_merge(hash3)).to eq(hash1.merge(hash3))
+      expect(hash1.my_merge(hash3)).to eq({ a: 1, b: 2, c: 33, d: 4, e: 5})
   end
 end

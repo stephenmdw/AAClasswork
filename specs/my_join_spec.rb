@@ -6,7 +6,7 @@
 describe "Array#my_join" do
   let(:array) { [ "a", "b", "c", "d" ] }
 
-  it "should NOT use built-in ruby #join method" do
+  before(:each) do
     expect(array).not_to receive(:join)
     array.my_join
   end

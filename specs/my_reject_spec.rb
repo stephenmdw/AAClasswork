@@ -4,7 +4,7 @@
 describe 'Array#my_reject' do
   let(:arr) { [1, 2, 3] }
 
-  it "should NOT use built-in #reject method" do
+  before(:each) do
     expect(arr).not_to receive(:reject)
     expect(arr).not_to receive(:reject!)
     arr.my_reject { |num| num > 1 }

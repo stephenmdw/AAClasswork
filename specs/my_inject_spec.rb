@@ -1,7 +1,7 @@
 # Write an `Array#my_inject` method. If my_inject receives
 # no argument, then use the first element of the array as the default accumulator.
 describe 'Array#my_inject' do
-  it "should NOT use built-in #inject or #reduce methods" do
+  before(:each) do
     arr = [1, 2, 3]
     expect(arr).not_to receive(:inject)
     expect(arr).not_to receive(:reduce)

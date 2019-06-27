@@ -5,7 +5,7 @@
 describe 'Array#my_all' do
   arr = [1,2,3]
 
-  it "should use NOT use built-in #all? method" do
+  before(:each) do
     expect(arr).not_to receive(:all?)
     arr.my_all? { |num| num > 0 }
   end

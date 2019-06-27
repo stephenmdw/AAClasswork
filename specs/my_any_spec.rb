@@ -6,7 +6,7 @@
 describe 'Array#my_any' do
   arr = [1,2,3]
 
-  it "should use NOT use built-in #any? method" do
+  before(:each) do
     expect(arr).not_to receive(:any?)
     arr.my_any? { |num| num > 0 }
   end
