@@ -10,6 +10,12 @@ describe "Array#merge_sort" do
     expect([1].merge_sort).to eq([1])
   end
 
+  before(:each) do
+    expect(array).not_to receive(:sort)
+    expect(array).not_to receive(:sort!)
+    array.merge_sort
+  end
+
   it "sorts numbers" do
     expect(array.merge_sort).to eq(array.sort)
   end
