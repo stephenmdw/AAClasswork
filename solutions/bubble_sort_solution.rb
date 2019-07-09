@@ -1,3 +1,5 @@
+# Write an Array method that returns a bubble-sorted copy of an array. 
+# Do NOT call the built-in `Array#sort` method in your implementation.
 class Array
   def bubble_sort!
     # Without a proc

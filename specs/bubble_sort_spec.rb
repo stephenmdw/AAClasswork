@@ -1,7 +1,14 @@
-describe "#bubble_sort" do
+describe "Array#bubble_sort" do
   # write a new `Array#bubble_sort` method; it should not modify the
   # array it is called on, but creates a new sorted array.
   let(:array) { [1, 2, 3, 4, 5].shuffle }
+
+  before(:each) do
+    expect_any_instance_of(Array).not_to receive(:sort)
+    expect_any_instance_of(Array).not_to receive(:sort!)
+
+    array.bubble_sort
+  end
 
   it "works with an empty array" do
     expect([].bubble_sort).to eq([])
