@@ -9,6 +9,7 @@ describe "Array#bubble_sort" do
     expect_any_instance_of(Array).not_to receive(:sort_by)
     expect_any_instance_of(Array).not_to receive(:sort_by!)
     array.bubble_sort
+    array.bubble_sort!
   end
 
   it "works with an empty array" do
