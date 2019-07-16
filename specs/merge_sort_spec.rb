@@ -1,4 +1,6 @@
 # Write an `Array#merge_sort` method; it should not modify the original array.
+# ** Do NOT use `Array#sort` or `Array#sort_by` **
+
 describe "Array#merge_sort" do
   let(:array) { [1, 2, 3, 4, 5].shuffle }
 
@@ -11,13 +13,15 @@ describe "Array#merge_sort" do
   end
 
   before(:each) do
-    expect(array).not_to receive(:sort)
-    expect(array).not_to receive(:sort!)
+    expect_any_instance_of(Array).not_to receive(:sort)
+    expect_any_instance_of(Array).not_to receive(:sort!)
+    expect_any_instance_of(Array).not_to receive(:sort_by)
+    expect_any_instance_of(Array).not_to receive(:sort_by!)
     array.merge_sort
   end
 
   it "sorts numbers" do
-    expect(array.merge_sort).to eq(array.sort)
+    expect(array.merge_sort).to eq([1,2,3,4,5])
   end
 
   it "will use block if given" do
