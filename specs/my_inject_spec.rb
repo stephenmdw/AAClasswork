@@ -1,5 +1,7 @@
 # Write an `Array#my_inject` method. If my_inject receives
 # no argument, then use the first element of the array as the default accumulator.
+# ** Do NOT use `Array#inject` or `Array#reduce` **
+
 describe 'Array#my_inject' do
   before(:each) do
     arr = [1, 2, 3]
