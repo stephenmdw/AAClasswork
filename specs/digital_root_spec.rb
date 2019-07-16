@@ -1,6 +1,7 @@
 describe "#digital_root" do
   before(:each) do
     expect_any_instance_of(Integer).to_not receive(:to_s)
+    expect_any_instance_of(Integer).to_not receive(:digits)
     digital_root(4322)
   end
   
