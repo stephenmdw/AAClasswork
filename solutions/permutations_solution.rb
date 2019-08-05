@@ -1,5 +1,5 @@
-# Define a recursive method `permutations(array)` 
-# that returns all of the permutations of an array
+# Define a recursive method `permutations(array)` that returns all of the 
+# permutations of an array
 
 # example => permutations([1,2,3])
 # should return => [
@@ -11,15 +11,15 @@
 #  [3, 2, 1]
 # ]
 
-# does not call Ruby's built-in `Array#permutation` method
+# You CANNOT use call Ruby's built-in `Array#permutation` method.
 
 def permutations(array)
   return [array] if array.length <= 1
 
-  # Similar to the subsets problem, we observe that to get the permutations
-  # of [1, 2, 3] we can look at the permutations of [1, 2] which are
-  # [1, 2] and [2, 1] and add the last element to every possible index getting
-  # [3, 1, 2], [1, 3, 2], [1, 2, 3], [3, 2, 1], [2, 3, 1], [2, 1, 3]
+  # Similar to the subsets problem, we observe that to get the permutations of 
+  # [1, 2, 3] we can look at the permutations of [1, 2] which are [1, 2] and 
+  # [2, 1] and add the last element to every possible index getting [3, 1, 2], 
+  # [1, 3, 2], [1, 2, 3], [3, 2, 1], [2, 3, 1], [2, 1, 3]
 
   # pop off the last element
   first = array.shift

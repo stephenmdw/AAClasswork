@@ -1,5 +1,5 @@
-# Define a recursive method `permutations(array)` 
-# that returns all of the permutations of an array
+# Define a recursive method `permutations(array)` that returns all of the 
+# permutations of an array
 
 # example => permutations([1,2,3])
 # should return => [
@@ -11,7 +11,8 @@
 #  [3, 2, 1]
 # ]
 
-# does not call Ruby's built-in `Array#permutation` method
+# You CANNOT use call Ruby's built-in `Array#permutation` method.
 
 def permutations(array)
+
 end

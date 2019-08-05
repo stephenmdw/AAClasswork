@@ -1,8 +1,8 @@
 class Array
-  # define a method `my_rotate(positions)` that rotates the 
-  # elements correctly based on the argument provided
-  # should work for positive and negative integer arguments
-  # you CANNOT use ruby's `Array#rotate` or `Array#rotate!`
+  # Define a method `Array#my_rotate(positions)` that rotates the elements 
+  # correctly based on the argument provided.  The work for positive and 
+  # negative integer arguments.  You CANNOT use Ruby's `Array#rotate` or 
+  # `Array#rotate!`.
 
   def my_rotate(positions = 1)
     split_idx = positions % self.length

@@ -1,6 +1,5 @@
 class Array
-  # Define a method `Array#my_quick_sort` that implements 
-  # the quick sort method. 
+  # Define a method `Array#quick_sort` that implements the quick sort method. 
   # The method should be able to accept a block.
 
   def my_quick_sort(&prc)
@@ -12,4 +11,5 @@ class Array
     right = self[1..-1].select{|el| prc.call(el, pivot) != -1}
     left.my_quick_sort(&prc) + [pivot] + right.my_quick_sort(&prc)
   end
+  
 end

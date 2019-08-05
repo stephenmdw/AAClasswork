@@ -3,7 +3,7 @@ describe "Array#my_zip" do
   let(:arr2) { [ 7, 8, 9 ] }
 
   before(:each) do
-    expect(arr1).not_to receive(:zip)
+    expect_any_instance_of(Array).not_to receive(:zip)
     arr1.my_zip(arr2)
   end 
 

@@ -2,8 +2,10 @@ describe "Array#my_select" do
   let(:arr) { [1, 2, 3] }
 
   before(:each) do
-    expect(arr).not_to receive(:select)
-    expect(arr).not_to receive(:select!)
+    expect_any_instance_of(Array).not_to receive(:select)
+    expect_any_instance_of(Array).not_to receive(:select!)
+    expect_any_instance_of(Array).not_to receive(:reject)
+    expect_any_instance_of(Array).not_to receive(:reject!)
     arr.my_select { |num| num > 1 }
   end
 

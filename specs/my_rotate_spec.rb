@@ -1,9 +1,11 @@
+require_relative "../problems/my_rotate.rb"
+
 describe "Array#my_rotate" do
   let(:arr) {[ "a", "b", "c", "d" ]}
 
   before (:each) do
-    expect(arr).not_to receive(:rotate), "You may not use the built-in `Array#rotate` method" 
-    expect(arr).not_to receive(:rotate!), "You may not use the built-in `Array#rotate` method"
+    expect_any_instance_of(Array).not_to receive(:rotate)
+    expect_any_instance_of(Array).not_to receive(:rotate!)
     arr.my_rotate(2)
   end
   
@@ -11,7 +13,6 @@ describe "Array#my_rotate" do
     expect(arr.my_rotate).to eq(["b", "c", "d", "a"])
   end
   
-
   it "Rotates the elements correctly if an argument is passed in" do
     expect(arr.my_rotate(2)).to eq(["c", "d", "a", "b"])
   end

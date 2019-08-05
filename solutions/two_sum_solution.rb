@@ -1,12 +1,10 @@
 class Array
-  # Define a method, `two_sum`, that finds all 
-  # pairs of positions where the elements at those positions 
-  # sum to zero. The method should return a nested 
+  # Define a method `Array#two_sum`, that finds all pairs of positions where the 
+  # elements at those positions sum to zero. The method should return a nested 
   # array of positions.
 
-  # Orrdering matters. We want each of the pairs to be sorted 
-  # smaller index before bigger index. We want the array of 
-  # pairs to be sorted "dictionary-wise":
+  # Ordering matters. We want each of the pairs to be sorted smaller index 
+  # before bigger index. We want the array of pairs to be sorted "dictionary-wise":
   #   [0, 2] before [1, 2] (smaller first elements come first)
   #   [0, 1] before [0, 2] (then smaller second elements come first)
     
