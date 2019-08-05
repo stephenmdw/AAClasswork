@@ -4,7 +4,7 @@ class Array
   # `Array#select`, `Array#select!`, `Array#reject`, OR `Array#reject!`.
 
   def my_select(&prc)
-
+    
   end
   
 end
