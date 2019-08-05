@@ -1,5 +1,3 @@
-require_relative "../problems/my_rotate.rb"
-
 describe "Array#my_rotate" do
   let(:arr) {[ "a", "b", "c", "d" ]}
 
