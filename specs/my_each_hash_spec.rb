@@ -25,7 +25,7 @@ describe "Hash#my_each" do
   it "should be chainable" do 
     a.my_each do |k,v|
       v.times { res << k }
-    end.my_eah do |k,v|
+    end.my_each do |k,v|
       v.times { res << k }
     end
     expect(res).to eq(["a","b","b","c","c","c","a","b","b","c","c","c"])
