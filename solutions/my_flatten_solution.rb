@@ -8,17 +8,16 @@ class Array
   end
 
   def my_controlled_flatten(level = nil)
-    return self if level < 1
-    result = []
+    flattened = []
 
-    self.each do |el|
-      if el.is_a?(Array)
-        result += el.my_controlled_flatten(level-1)
+    self.each do |ele|
+      if ele.is_a?(Array) && level != 0
+        flattened += (level.nil? ? ele.my_controlled_flatten : ele.my_controlled_flatten(level - 1))
       else
-        result << el
+        flattened << ele
       end
     end
 
-    result
+    flattened
   end
 end

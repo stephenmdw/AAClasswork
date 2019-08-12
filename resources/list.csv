@@ -23,6 +23,7 @@ my_all,enumerable,problems/my_all.rb,specs/my_all_spec.rb,solutions/my_all_solut
 my_any,enumerable,problems/my_any.rb,specs/my_any_spec.rb,solutions/my_any_solution.rb
 my_each,enumerable,problems/my_each.rb,specs/my_each_spec.rb,solutions/my_each_solution.rb
 my_each_hash,enumerable,problems/my_each_hash.rb,specs/my_each_hash_spec.rb,solutions/my_each_hash_solution.rb
+my_each_with_index,enumerable,problems/my_each_with_index.rb,specs/my_each_with_index_spec.rb,solutions/my_each_with_index_solution.rb
 my_flatten,array,problems/my_flatten.rb,specs/my_flatten_spec.rb,solutions/my_flatten_solution.rb
 my_inject,enumerable,problems/my_inject.rb,specs/my_inject_spec.rb,solutions/my_inject_solution.rb
 my_join,array,problems/my_join.rb,specs/my_join_spec.rb,solutions/my_join_solution.rb

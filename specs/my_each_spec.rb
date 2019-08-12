@@ -9,7 +9,7 @@ describe "Array#my_each" do
   end
 
   it "works for blocks" do
-    arr.my_each{ |el| res << 2 * el }
+    arr.my_each { |el| res << 2 * el }
     expect(res).to eq([2,4,6])
   end
 
