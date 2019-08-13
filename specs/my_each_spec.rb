@@ -5,7 +5,6 @@ describe "Array#my_each" do
   before do
     expect(arr).not_to receive(:each)
     expect(arr).not_to receive(:each_with_index)
-    arr.my_each {|el| el}
   end
 
   it "works for blocks" do

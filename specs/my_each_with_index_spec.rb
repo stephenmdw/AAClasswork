@@ -5,7 +5,6 @@ describe "Array#my_each_with_index" do
   before do
     expect(arr).not_to receive(:each)
     expect(arr).not_to receive(:each_with_index)
-    arr.my_each_with_index {|el, i| el + i}
   end
 
   it "It works for blocks that use both the index and element" do

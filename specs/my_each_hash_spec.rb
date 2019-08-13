@@ -5,7 +5,6 @@ describe "Hash#my_each" do
 
   before do
     expect(a).not_to receive(:each)
-    a.my_each {|k,v| k}
   end
 
   it "should call the proc on each key value pair" do

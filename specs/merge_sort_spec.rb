@@ -17,7 +17,6 @@ describe "Array#merge_sort" do
     expect_any_instance_of(Array).not_to receive(:sort!)
     expect_any_instance_of(Array).not_to receive(:sort_by)
     expect_any_instance_of(Array).not_to receive(:sort_by!)
-    array.merge_sort
   end
 
   it "sorts numbers" do

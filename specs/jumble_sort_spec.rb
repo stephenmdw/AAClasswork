@@ -13,7 +13,6 @@ describe "#jumble_sort" do
     expect_any_instance_of(String).to not_receive(:sort!)
     expect_any_instance_of(String).to not_receive(:sort_by)
     expect_any_instance_of(String).to not_receive(:sort_by!)
-    jumble_sort("lol")
   end
 
   it "defaults to alphabetical order" do

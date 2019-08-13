@@ -3,11 +3,10 @@
 # ** Do NOT use `Array#inject` or `Array#reduce` **
 
 describe 'Array#my_inject' do
+  let(:arr) { [1, 2, 3] }
   before(:each) do
-    arr = [1, 2, 3]
     expect(arr).not_to receive(:inject)
     expect(arr).not_to receive(:reduce)
-    arr.my_inject(1) { |acc, x| acc + x }
   end
 
   it 'calls the block passed to it' do

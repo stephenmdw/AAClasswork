@@ -14,7 +14,6 @@ describe 'Array#my_reject' do
     expect(arr).not_to receive(:select!)
     expect_any_instance_of(Array).not_to receive(:reject)
     expect_any_instance_of(Array).not_to receive(:reject!)
-    arr.my_reject { |num| num > 1 }
   end
 
   it 'It correctly selects elements that do not match the passed in block' do

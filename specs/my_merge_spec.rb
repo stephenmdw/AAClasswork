@@ -10,7 +10,6 @@ describe "Hash#my_merge" do
   before(:each) do
     expect(hash1).not_to receive(:merge)
     expect(hash1).not_to receive(:merge!)
-    hash1.my_merge(hash2)
   end
 
   it "Merges 2 hashes and returns a hash" do

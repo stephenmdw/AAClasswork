@@ -10,7 +10,6 @@ describe "Array#my_join" do
 
   before(:each) do
     expect(array).not_to receive(:join)
-    array.my_join
   end
 
   it "Joins an array if no argument is passed" do

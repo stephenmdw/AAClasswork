@@ -4,11 +4,10 @@
 # Example: `[1,2,3].my_any? {|n| n.even?}` => true
 # `[1,3,5].my_any? {|n| n.even?}` => false
 describe 'Array#my_any' do
-  arr = [1,2,3]
+  let(:arr) { [1,2,3] }
 
   before(:each) do
     expect(arr).not_to receive(:any?)
-    arr.my_any? { |num| num > 0 }
   end
 
   it "returns true if any number matches the block" do
