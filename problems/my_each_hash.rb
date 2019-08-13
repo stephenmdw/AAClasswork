@@ -1,5 +1,5 @@
 class Hash
-  # Write a version of my each that calls a proc on each key, value pair
+  # Write a `Hash#my_each(&prc)` that calls a proc on each key, value pair
   def my_each(&prc)
 
   end

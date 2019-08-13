@@ -1,9 +1,12 @@
+# Write an `Array#my_inject` method. If my_inject receives
+# no argument, then use the first element of the array as the default accumulator.
+# ** Do NOT use `Array#inject` or `Array#reduce` **
+
 describe 'Array#my_inject' do
-  it "should NOT use built-in #inject or #reduce methods" do
-    arr = [1, 2, 3]
+  let(:arr) { [1, 2, 3] }
+  before(:each) do
     expect(arr).not_to receive(:inject)
     expect(arr).not_to receive(:reduce)
-    arr.my_inject(1) { |acc, x| acc + x }
   end
 
   it 'calls the block passed to it' do

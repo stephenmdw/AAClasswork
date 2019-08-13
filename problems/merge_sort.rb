@@ -1,5 +1,6 @@
 class Array
-  # Write an Array#merge_sort method; it should not modify the original array.
+  # Write an `Array#merge_sort` method; it should not modify the original array.
+  # ** Do NOT use `Array#sort` or `Array#sort_by` **
   def merge_sort(&prc)
 
   end
