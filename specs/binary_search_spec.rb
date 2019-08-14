@@ -6,14 +6,11 @@ describe 'Array#my_bsearch' do
   disallowed_methods = [
     :index, :find_index, :include?, :member?
   ]
+
   before(:each) do
-  
     disallowed_methods.each do |method|
       expect_any_instance_of(Array).not_to receive(method)
     end
-  
-    arr.my_bsearch(5)
-    arr.my_bsearch(11)
   end
 
   it "returns nil if the array is empty" do
@@ -35,5 +32,4 @@ describe 'Array#my_bsearch' do
   it "returns nil if the target isn't found" do
     expect(arr.my_bsearch(5)).to be_nil
   end
-
 end

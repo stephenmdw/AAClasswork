@@ -3,6 +3,7 @@
 #
 # E.g. base_converter(5, 2) == "101"
 # base_converter(31, 16) == "1f"
+
 def base_converter(num, b)
   return num.to_s if [0,1].include?(num)
 
