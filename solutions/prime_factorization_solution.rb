@@ -1,3 +1,19 @@
+# It is sometimes necessary to be able to break down a number into its prime 
+# factors.  The process is called prime factorization.  We can use a factor tree 
+# to determine the prime factorization of a number:
+
+#                12
+#               /  \
+#              /    \
+#             4      3
+#            / \
+#           2   2
+
+# Define a method `prime_factorization(n)` that breaks a number down into it's 
+# prime factors.
+
+# example: prime_factorization(12) => [2,2,3]
+
 def prime_factorization(num)
   # Base case - 1 is not a prime so we return an empty array here
   return [] if num == 1
@@ -32,10 +48,10 @@ def prime_factorization(num)
   # then.
 
   # We also do not need to explicitly check that the factor is prime, because
-  # by starting at 2, we ensure that the first factor we find is prime. Any factor
-  # that is not prime, will itself have factors that are also factors of the
-  # number we are evaluating. This will continue to be true until we in fact reach
-  # the prime factors.
+  # by starting at 2, we ensure that the first factor we find is prime. Any 
+  # factor that is not prime, will itself have factors that are also factors of 
+  # the number we are evaluating. This will continue to be true until we in fact 
+  # reach the prime factors.
   (2..Math.sqrt(num).ceil).to_a.each do |i|
     if num % i == 0
       return [i] + prime_factorization(num/i)
