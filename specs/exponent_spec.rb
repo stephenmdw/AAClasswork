@@ -1,4 +1,4 @@
-describe "exponent" do
+describe "#exponent" do
   it "returns the correct answer for positive exponents" do
     expect(exponent(5,3)).to eq(125)
   end

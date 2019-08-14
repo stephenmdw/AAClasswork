@@ -1,4 +1,4 @@
-describe "prime_factorization" do
+describe "#prime_factorization" do
   it "handles an input of 2" do
     expect(prime_factorization(2)).to eq([2])
   end

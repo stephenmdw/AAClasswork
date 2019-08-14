@@ -1,4 +1,4 @@
-describe 'subsets' do
+describe '#subsets' do
   it "works for an empty array" do
     expect(subsets([])).to match_array([[]])
   end

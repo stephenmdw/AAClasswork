@@ -1,18 +1,10 @@
-# Write a method that takes a string and an alphabet. It returns a copy of the string
-# with the letters re-ordered according to their positions in the alphabet. If
-# no alphabet is passed in, it defaults to normal alphabetical order (a-z).
-# **Do NOT use `Array#sort` or `Array#sort_by`
-
-# Example:
-# `jumble_sort("hello")` => "ehllo"
-# `jumble_sort("hello", ['o', 'l', 'h', 'e'])` => 'ollhe'
 describe "#jumble_sort" do
 
   before(:each) do 
-    expect_any_instance_of(String).to not_receive(:sort)
-    expect_any_instance_of(String).to not_receive(:sort!)
-    expect_any_instance_of(String).to not_receive(:sort_by)
-    expect_any_instance_of(String).to not_receive(:sort_by!)
+    expect_any_instance_of(Array).to not_receive(:sort)
+    expect_any_instance_of(Array).to not_receive(:sort!)
+    expect_any_instance_of(Array).to not_receive(:sort_by)
+    expect_any_instance_of(Array).to not_receive(:sort_by!)
   end
 
   it "defaults to alphabetical order" do

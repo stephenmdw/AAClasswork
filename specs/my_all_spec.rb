@@ -1,13 +1,9 @@
-# Write an `Array#my_all?(&prc)` method. 
-# This method should return true if every element in the array satisfies the block, otherwise return false.
-# ** Do NOT use `Array#all?` **
-
-# Example: `[1,2,3].my_all? {|n| n.even?}` => false
-# `[2,4,6].my_all? {|n| n.even?}` => true
 describe 'Array#my_all' do
   let(:arr) { [1,2,3] }
+  
   before(:each) do
     expect(arr).not_to receive(:all?)
+    expect(arr).not_to receive(:dup)
   end
 
   it "returns true if all elements match the block" do

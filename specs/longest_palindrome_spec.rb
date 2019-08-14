@@ -1,6 +1,3 @@
-# A palindrome is a word or sequence of words that reads the same backwards as
-# forwards. Write a method that returns the length of the longest palindrome in
-# a given string. If there is no palindrome longer than two letters, return false.
 describe '#longest_palindrome' do
   it 'returns false if there is no palindrome longer than two letters' do
     expect(longest_palindrome("palindrome")).to eq(false)

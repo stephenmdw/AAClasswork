@@ -1,4 +1,4 @@
-describe 'fibs_sum' do
+describe '#fibs_sum' do
   it 'returns the sum of the first fibonacci number' do
     expect(fibs_sum(1)).to eq(1)
   end

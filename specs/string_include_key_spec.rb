@@ -1,4 +1,4 @@
-describe "string_include_key" do
+describe "#string_include_key" do
   it "returns true for the same string" do
     expect(string_include_key?("adblfci", "abc")).to eq(true)
   end

@@ -1,13 +1,9 @@
-# Write an `Array#my_any?(&prc)` method.
-# This method should return true if any of the Array elements satisfy the block,
-# otherwise it should return false.
-# Example: `[1,2,3].my_any? {|n| n.even?}` => true
-# `[1,3,5].my_any? {|n| n.even?}` => false
 describe 'Array#my_any' do
   let(:arr) { [1,2,3] }
 
   before(:each) do
     expect(arr).not_to receive(:any?)
+    expect(arr).not_to receive(:dup)
   end
 
   it "returns true if any number matches the block" do

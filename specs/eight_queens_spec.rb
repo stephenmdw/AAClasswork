@@ -1,4 +1,4 @@
-describe "eight_queens" do
+describe "EightQueens" do
   eight_queens = EightQueens.new()
 
   it "returns the correct number" do

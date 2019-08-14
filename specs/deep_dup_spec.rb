@@ -1,4 +1,4 @@
-describe "deep_dup" do
+describe "#deep_dup" do
   subject(:robot_parts) do [
       ["nuts", "bolts", "washers"],
       ["capacitors", "resistors", "inductors"]

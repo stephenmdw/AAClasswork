@@ -1,4 +1,7 @@
 class Array
+  # Write an `Array#merge_sort` method; it should not modify the original array.
+  # **Do NOT use `Array#sort` or `Array#sort_by` in your implementation.**
+  
   def merge_sort(&prc)
     # See how I create a Proc if no block was given; this eliminates
     # having to later have two branches of logic, one for a block and
