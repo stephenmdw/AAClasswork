@@ -12,5 +12,4 @@ class Array
 
     selects
   end
-  
 end

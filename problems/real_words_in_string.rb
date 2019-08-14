@@ -6,5 +6,4 @@ class String
   def real_words_in_string(dictionary)
 
   end
-
 end

@@ -4,7 +4,6 @@ describe "Array#my_zip" do
 
   before(:each) do
     expect_any_instance_of(Array).not_to receive(:zip)
-    arr1.my_zip(arr2)
   end 
 
   it "Zips arrays of the same size" do

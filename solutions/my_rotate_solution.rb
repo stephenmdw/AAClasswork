@@ -9,5 +9,4 @@ class Array
 
     self.drop(split_idx) + self.take(split_idx)
   end
-
 end

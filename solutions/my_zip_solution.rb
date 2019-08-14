@@ -1,6 +1,6 @@
 class Array
   # Define a method `Array#my_zip(*arrays)` that merges elements from the 
-  # receiver with the corresponding elements from each provided argument.  You 
+  # receiver with the corresponding elements from each provided argument. You 
   # CANNOT use Ruby's built-in `Array#zip` method
 
   # example => [1,2,3].my_zip([4,5,6], [7,8,9]) 
@@ -21,5 +21,4 @@ class Array
 
     zipped
   end
-  
 end

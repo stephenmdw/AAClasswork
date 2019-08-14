@@ -4,7 +4,6 @@ describe "Array#my_rotate" do
   before (:each) do
     expect_any_instance_of(Array).not_to receive(:rotate)
     expect_any_instance_of(Array).not_to receive(:rotate!)
-    arr.my_rotate(2)
   end
   
   it "Rotates the elements 1 position if no argument is passed in" do

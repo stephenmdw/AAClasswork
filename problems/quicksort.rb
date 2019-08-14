@@ -4,6 +4,5 @@ class Array
 
   def my_quick_sort(&prc)
 
-  end
-  
+  end  
 end
