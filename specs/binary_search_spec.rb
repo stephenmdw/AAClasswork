@@ -4,13 +4,14 @@ describe 'Array#my_bsearch' do
   let(:arr) { [11, 22, 33, 44, 66] }
 
   disallowed_methods = [
-    :index, :find_index, :include?, :member?
+    :index, :find_index, :include?, :member?, :dup
   ]
 
   before(:each) do
     disallowed_methods.each do |method|
-      expect_any_instance_of(Array).not_to receive(method)
+      expect(arr).not_to receive(method)
     end
+    expect_any_instance_of(Array).not_to receive(:index)
   end
 
   it "returns nil if the array is empty" do
