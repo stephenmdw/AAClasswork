@@ -2,6 +2,13 @@ describe "Array#my_quick_sort" do
   let(:array) { [1, 2, 3, 4, 5, 6, 7].shuffle }
   let(:sorted) { [1, 2, 3, 4, 5, 6, 7] }
 
+  before(:each) do
+    expect_any_instance_of(Array).not_to receive(:sort)
+    expect_any_instance_of(Array).not_to receive(:sort!)
+    expect_any_instance_of(Array).not_to receive(:sort_by)
+    expect_any_instance_of(Array).not_to receive(:sort_by!)
+  end
+
   it "works with an empty array" do 
     expect([].my_quick_sort).to eq([])
   end

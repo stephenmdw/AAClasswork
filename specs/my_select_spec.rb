@@ -4,10 +4,11 @@ describe "Array#my_select" do
   before(:each) do
     expect(arr).not_to receive(:select)
     expect(arr).not_to receive(:dup)
+    expect(arr).not_to receive(:slice)
+    expect(arr).not_to receive(:[])
     expect_any_instance_of(Array).not_to receive(:select!)
     expect_any_instance_of(Array).not_to receive(:reject)
     expect_any_instance_of(Array).not_to receive(:reject!)
-    arr.my_select { |el| el }
   end
 
   it "It correctly selects elements according to the passed in block" do
