@@ -1,6 +1,8 @@
 class Array
   # Write an Array method that returns a bubble-sorted copy of an array. 
-  # Do NOT call the built-in Array#sort method in your implementation. 
+  # Do NOT call the built-in `Array#sort` or `Array#sort_by` methods in 
+  # your implementation. 
+  
   def bubble_sort(&prc)
   end
 

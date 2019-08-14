@@ -3,6 +3,7 @@
 #
 # E.g. base_converter(5, 2) == "101"
 # base_converter(31, 16) == "1f"
+
 def base_converter(num, b)
 
 end

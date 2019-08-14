@@ -1,4 +1,4 @@
-describe "#dups" do
+describe "Array#dups" do
   it "solves a simple example" do
     expect([1, 3, 0, 1].dups).to eq({ 1 => [0, 3] })
   end
