@@ -1,10 +1,10 @@
 describe "#jumble_sort" do
 
   before(:each) do 
-    expect_any_instance_of(Array).to not_receive(:sort)
-    expect_any_instance_of(Array).to not_receive(:sort!)
-    expect_any_instance_of(Array).to not_receive(:sort_by)
-    expect_any_instance_of(Array).to not_receive(:sort_by!)
+    expect_any_instance_of(Array).not_to receive(:sort)
+    expect_any_instance_of(Array).not_to receive(:sort!)
+    expect_any_instance_of(Array).not_to receive(:sort_by)
+    expect_any_instance_of(Array).not_to receive(:sort_by!)
   end
 
   it "defaults to alphabetical order" do
