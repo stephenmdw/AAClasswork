@@ -1,9 +1,12 @@
 describe "Array#my_reverse" do
   let(:array) { [ "a", "b", "c", "d" ] }
 
-  before(:each) "should NOT use built-in ruby #reverse method" do
+  before(:each) do
     expect_any_instance_of(Array).not_to receive(:reverse!)
-    expect_any_instance_of(Array).not_to receive(:reverse)
+    expect(array).not_to receive(:reverse)
+    expect(array).not_to receive(:dup)
+    expect(array).not_to receive(:slice)
+    expect(array).not_to receive(:slice!)
   end
 
   it "reverses an array" do
