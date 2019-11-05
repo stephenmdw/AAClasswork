@@ -31,6 +31,9 @@ describe 'Array#my_bsearch' do
   end
 
   it "returns nil if the target isn't found" do
+    # Properly returns nil searching left half
     expect(arr.my_bsearch(5)).to be_nil
+    # Properly returns nil searching right half
+    expect(arr.my_bsearch(80)).to be_nil
   end
 end
