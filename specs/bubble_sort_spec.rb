@@ -4,7 +4,6 @@ describe "Array#bubble_sort" do
   before(:each) do
     expect_any_instance_of(Array).not_to receive(:sort)
     expect_any_instance_of(Array).not_to receive(:sort!)
-    expect_any_instance_of(Array).not_to receive(:sort_by)
     expect_any_instance_of(Array).not_to receive(:sort_by!)
   end
 
