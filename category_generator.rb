@@ -84,6 +84,7 @@ spec << "require 'practice_test'" << "\n" << "\n"
 # .rspec file add formatting and color for better readability.
 rspec << "--format documentation" << "\n"
 rspec << "--color" << "\n"
+rspec << "--order=default" << "\n"
 
 # Add rspec, byebug, and colorize gems to Gemfile
 gemfile << "source 'https://rubygems.org'" << "\n"
