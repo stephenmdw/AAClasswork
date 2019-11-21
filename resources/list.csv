@@ -3,7 +3,7 @@ anagrams,string,problems/anagrams.rb,specs/anagrams_spec.rb,solutions/anagrams_s
 base_converter,bonus,problems/base_converter.rb,specs/base_converter_spec.rb,solutions/base_converter_solution.rb
 binary_search,sort,problems/binary_search.rb,specs/binary_search_spec.rb,solutions/binary_search_solution.rb
 bubble_sort,sort,problems/bubble_sort.rb,specs/bubble_sort_spec.rb,solutions/bubble_sort_solution.rb
-caesar_cipher,string,problems/caesar_cipher.rb,specs/caesar_cipher_spec.rb,solutions/caesar_cipher_solution.rb
+caesar_cipher,bonus,problems/caesar_cipher.rb,specs/caesar_cipher_spec.rb,solutions/caesar_cipher_solution.rb
 deep_dup,recursion,problems/deep_dup.rb,specs/deep_dup_spec.rb,solutions/deep_dup_solution.rb
 digital_root,recursion,problems/digital_root.rb,specs/digital_root_spec.rb,solutions/digital_root_solution.rb
 doubler,array,problems/doubler.rb,specs/doubler_spec.rb,solutions/doubler_solution.rb
@@ -34,8 +34,8 @@ my_rotate,array,problems/my_rotate.rb,specs/my_rotate_spec.rb,solutions/my_rotat
 my_select,enumerable,problems/my_select.rb,specs/my_select_spec.rb,solutions/my_select_solution.rb
 my_zip,array,problems/my_zip.rb,specs/my_zip_spec.rb,solutions/my_zip_solution.rb
 permutations,bonus,problems/permutations.rb,specs/permutations_spec.rb,solutions/permutations_solution.rb
-pig_latinify,string,problems/pig_latinify.rb,specs/pig_latinify_spec.rb,solutions/pig_latinify_solution.rb
-prime_factorization,recursion,problems/prime_factorization.rb,specs/prime_factorization_spec.rb,solutions/prime_factorization_solution.rb
+pig_latinify,bonus,problems/pig_latinify.rb,specs/pig_latinify_spec.rb,solutions/pig_latinify_solution.rb
+prime_factorization,bonus,problems/prime_factorization.rb,specs/prime_factorization_spec.rb,solutions/prime_factorization_solution.rb
 primes,array,problems/primes.rb,specs/primes_spec.rb,solutions/primes_solution.rb
 quicksort,sort,problems/quicksort.rb,specs/quicksort_spec.rb,solutions/quicksort_solution.rb
 real_words_in_string,string,problems/real_words_in_string.rb,specs/real_words_in_string_spec.rb,solutions/real_words_in_string_solution.rb
