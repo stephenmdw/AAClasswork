@@ -4,6 +4,6 @@ class Array
   # **Do NOT use the built-in `Array#inject` or `Array#reduce` methods in your 
   # implementation.**
 
-  def my_inject(accumulator = nil)
+  def my_inject(accumulator = nil, &prc)
   end
 end
