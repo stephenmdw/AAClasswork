@@ -16,8 +16,8 @@ prepared for anything come assessment day.
 
 1. Clone this repo onto your local machine.
 
-2. Navigate to your local repo directory in terminal and run one of the
-   following generators (detailed in below section):
+2. Navigate to your local repo directory in terminal, run `bundle install`, and 
+   then run one of the following generators (detailed in below section):
 
    - `ruby practice_test_generator.rb` - Generates a practice test in a folder
      called `practice_assessment`
