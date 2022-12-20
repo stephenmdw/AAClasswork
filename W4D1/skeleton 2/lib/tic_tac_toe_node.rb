@@ -9,13 +9,17 @@ class TicTacToeNode
   attr_accessor :board, :next_mover_mark, :prev_move_pos
 
   def losing_node?(evaluator)
-    return false if board.full? && (@board.winner = nil? || @board.winner == evaluator) #winner? us?
-    return true if board.full? && @board.winner != evaluator
-    if evaluator  is us
-      all child is losing then we lose
+    return true if @board.over? && @board.winner != evaluator && @board.won?
+    return false if @board.tied?
+    return false if @board.over? && (@board.winner == nil || @board.winner == evaluator) #winner? us?
+ 
+    if evaluator  == self.next_mover_mark
+      self.children.all? { |child| child.losing_node?(evaluator)} #call losing node again with same evaluator  self.children.all?
     else
-      one child is losing
-  end
+      self.children.any? { |child| child.losing_node?(evaluator)}  #call losing node again self.children.any?
+    end
+  end 
+
 
   def winning_node?(evaluator)
   end
